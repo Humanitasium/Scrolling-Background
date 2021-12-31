@@ -19,12 +19,12 @@ while run: #while loop
     of a seamless never ending background
     '''
     if i == -width: 
-    '''
-    once a full loop of the image has been completed
-    the position of the image is reset
-    '''
-        win.blit(bg, (i+width,0))
+        win.blit(bg, (i+width,0))#adds a new image once a loop of the image has been completed
         i=0
+        '''
+        once a full loop of the image has been completed
+        the position of the image is reset
+        '''
     i -= 5 # sets the speed of the loop
     pygame.display.flip() #updates display
 pygame.quit() 
